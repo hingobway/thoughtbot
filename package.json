@@ -1,0 +1,28 @@
+{
+  "name": "thoughtbot",
+  "version": "0.2.0",
+  "description": "Posts wonderful tweets using a database system anyone you want can contribute to. Tweets are curated through a channel in a Discord server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pm2:start": "pm2 start index.js --name=\"thoughtbot\"",
+    "pm2:logs": "pm2 logs thoughtbot",
+    "pm2:stop": "pm2 stop thoughtbot",
+    "pm2:restart": "pm2 restart thoughtbot",
+    "pm2:delete": "pm2 delete thoughtbot"
+  },
+  "author": "hingobway",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-colors": "^2.0.2",
+    "discord.js": "^11.3.0",
+    "lowdb": "^1.0.0",
+    "moment": "^2.20.1",
+    "prompt": "^1.0.0",
+    "request": "^2.83.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "pm2": "^3.0.0"
+  }
+}
